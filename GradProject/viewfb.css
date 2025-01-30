@@ -1,0 +1,52 @@
+body{
+	background-color: var(--main-color);
+}
+
+.fdbck-header h2{
+	padding: 1rem 0 0 ;
+	color: white;
+	border-bottom: 5px solid white;
+}
+
+.container{
+	margin-top: 5rem;
+	height: 100vh;
+}
+.cards-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+}
+
+.card {
+	background-color: #f7f7f7;
+	padding: 20px;
+	margin: 10px;
+	word-wrap: break-word;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.subject{
+	font-size: 24px;
+	border-bottom: 1px solid var(--main-color);
+}
+.message{
+	padding: 0.5rem;
+}
+
+.name{
+	font-size: 24px;
+}
+
+.email , .name{
+	text-align: end;
+	padding-right: 2rem;
+}
+
+.card-placeholder {
+	background-color: #f2f2f2;
+	border: 2px dashed #ccc;
+	border-radius: 5px;
+	height: 100px;
+	margin: 10px;
+}

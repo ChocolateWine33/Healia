@@ -1,0 +1,62 @@
+body {
+    background-color: var(--main-color);
+    margin: 0;
+    padding: 0;
+}
+
+.mission, .team, .ourpurpose {
+    background-color: #fff;
+    width: 80%;
+    margin: 50px auto 0;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 10px #888;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .team-member {
+    width: 250px;
+    height: 350px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+  }
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #2d3748;
+  }
+  .team-member p {
+    font-size: 1rem;
+    font-style: italic;
+    color: #4a5568;
+  }

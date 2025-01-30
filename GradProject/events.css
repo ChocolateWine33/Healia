@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+    .event-box {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+.event-container {
+    display: grid;
+  }
+
+  .event-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+

@@ -1,0 +1,69 @@
+.join-community{
+    margin: auto;
+    color: var(--main-color);
+    margin: 2rem;
+    text-align: center;
+}
+.join-community h3{
+    border-bottom: 0.1rem solid var(--main-color);
+}
+.join-community button{
+    margin-top: 0.5rem;
+    border: 0.1rem solid var(--main-color);
+    font-size: 1.3rem;
+    border-radius: 0.25rem;
+}
+
+.events{
+    border: 1px solid black;
+    padding: 0.5rem;
+    margin: 1rem;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px ,1fr));
+}
+.card{
+    border: 0.05rem solid gray;
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    background-color: rgb(245, 245, 245);
+}
+
+.card-button{
+    margin: 1rem auto;
+    width: 150px;
+    height: 50px;
+    border: 1px solid var(--main-color);
+    font-size: 1rem;
+    color: var(--main-color);
+}
+
+.card-button a{
+    color: var(--main-color);
+
+}
+
+.card-button a:hover{
+    color: var(--secondary-color);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body{
+    display: grid;
+    gap: 1rem;
+}
+
+.card-body img{
+    margin: auto;
+    height: 150px ;
+    width: 100px;
+    padding: 0.5rem;
+}
+.card-body h4{
+    font-weight: 100;
+    font-size: 1.5rem;
+}

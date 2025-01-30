@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400&display=swap');
+
+:root{
+    --main-color:#10b981;
+    --other-main-color: rgb(46, 202, 150); ;
+    --font-color:white ;
+    --secondary-color: #f3f4f6;
+    --beige-color:#fff8db;
+    --blue-color:#116A7B;
+    --green-color:#B3C890;
+    --dark-gray:rgb(200, 200, 200);
+    --light-gray:rgb(230, 230, 230);
+}
+
+*,ul,ol,li,a{
+    font-family: 'Overpass', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    line-height: 1.15;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+ul,ol,li{
+    cursor: pointer;
+}
+
+
+a {
+    color: white;
+    position: relative;
+
+}
+
+
+h1{
+    text-wrap:balance;
+}
+
+
+a::before {
+    content: '';
+    position: absolute;
+    width: 99%;
+    height: 4px;
+    background-color: inherit;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+    }
+
+a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+
+button{
+    cursor: pointer;
+    background: #fff;
+    border: none;
+    font-size: 2rem;
+    margin-top: 3rem;
+    padding: 0.25rem;
+    color: var(--main-color);
+    box-shadow: inset 0 0 0 0 var(--main-color);
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+}
+button:hover {
+    box-shadow: inset 0 200px 0 0 var(--main-color);
+    color: white;
+    border: 1px solid white;
+}
+
+/* #logo img{
+    width: 30px;
+    height: 30px;
+} */
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+/* 
+header{
+    background-color: var(--main-color);
+    padding: 0.5rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+} */
+
+
+

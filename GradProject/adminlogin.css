@@ -1,0 +1,31 @@
+body{
+    background-color: var(--beige-color);
+    display:grid;
+    place-items: center;
+    height: 100vh;
+    color: var(--beige-color);
+}
+
+.container{
+    background-color: var(--main-color);
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+input{
+    height: 25px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+form button{
+    border: 1px solid;
+    padding: 0.1rem;
+    font-size: 1.25rem;
+}
+

@@ -1,0 +1,229 @@
+/* .healia-header h4{
+    color: white;
+}
+
+.healia-header-nav > *{
+    padding-right: 0.5rem;
+    font-size: 1.5rem;
+    color: white;
+} */
+
+a{
+    text-decoration: none;
+}
+
+a button{
+    padding: 1rem;
+    font-size: 1.25rem;
+}
+
+.get-started{
+    background-color: var(--main-color);
+    min-height: 80vh;
+    text-align: center;
+    display: grid;
+    
+}
+.get-started>img{
+    filter: blur(1rem);
+    -webkit-filter: blur(1rem);
+}
+.happy-life-intro{
+    font-size: 4rem;
+    color: var(--font-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.join-our-community,.explore-helpful-videos,.what-users-say{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+.breaking-point{
+    gap: 2rem;
+
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+.breaking-point h2{
+    font-size: 2rem;
+
+}
+.breaking-point h3{
+    font-weight: 400;
+}
+
+
+
+.see-our-patients{
+    margin: 5rem 0;
+    font-size: 1.6rem;
+
+}
+
+.see-our-patients h2{
+    color: var(--main-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.our-patients{
+    gap: 1rem;
+    background-color:white ;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+
+}
+
+.patient-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 20rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+    background-color: var(--secondary-color);
+
+}
+
+.patient-card img{
+    height: 15rem;
+    width: 15rem;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+
+.see-our-therapists{
+    background: url('./images/pexels-alex-green-5699418.jpg');
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 1rem;
+    height: 30vh;
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: space-evenly;
+}
+.see-our-therapists h2{
+    line-height: 1;
+    font-size: 2.5rem;
+    border-bottom: 5px solid white;
+}
+
+
+
+.hidden{
+    opacity: 0;
+    filter: blur((5px));
+    transition: all 1s ease-in-out;
+    transform: translateX(-100%);
+}   
+
+.show{
+    filter: blur(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.patient-card:nth-child(1){
+    transform: translateY(100%);
+    transition-delay: 200ms;
+}
+.patient-card:nth-child(2){
+    transform: translateY(100%);
+    transition-delay: 400ms;
+}
+.patient-card:nth-child(3){
+    transform: translateY(100%);
+    transition-delay: 600ms;
+}
+
+.patient-card.show{
+    transform: translateY(0);
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    background-color: rgb(45, 45, 45);
+}
+.contacts{
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    font-weight: 300;
+}
+footer a{
+    padding: 0.2rem;
+}
+
+footer button{
+    margin: 0;
+    margin-top: 0.5rem;
+    padding: 0;
+    height: 20px;
+    width: 100px;
+    font-size: 15px;
+}
+
+
+
+
+@media (perfers-reduced-motion) {
+    .hidden{
+        transition: none;
+    }
+}
+
+
+@media (max-width:710px) {
+    header{
+        flex-direction: column;
+        
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .join-our-community,.what-users-say{
+
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .explore-helpful-videos{
+
+        display: flex;
+        flex-direction: column;
+    }
+    .our-patients{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .breaking-point{
+        padding: 2rem;
+    }
+
+
+}

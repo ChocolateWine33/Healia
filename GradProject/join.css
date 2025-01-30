@@ -1,0 +1,68 @@
+body{
+	text-align: center;
+	background-color: var(--beige-color);
+}
+form{
+	text-align: start;
+
+	width: 60%;
+	margin: 1rem auto;
+	gap: 1rem;
+	background-color: var(--main-color);
+	color: var(--font-color);
+	padding: 0.5rem;
+	border-radius: 0.25rem;
+	display: grid;
+	grid-template-areas: 
+	'a a'
+	'b c'
+	'd d';
+}
+
+form h1{
+	grid-area: a;
+}
+
+.information{
+	grid-area: b;
+	display: grid;
+}
+
+.qualifications{
+	grid-area: c;
+	display: grid;
+}
+
+.submit-btn{
+	grid-area: d;
+}
+
+
+form *{
+	border-radius: 0.25rem;
+
+}
+form h1{
+	text-align: center;
+}
+input{
+	outline: none;
+	border: none;
+	height: 25px;
+}
+
+label{
+	margin-top: 1rem;
+
+}
+
+.image-cv{
+	padding: 1rem 0;
+}
+
+
+@media (max-width:750px) {
+	form{
+		width: 90vw;
+	}
+}

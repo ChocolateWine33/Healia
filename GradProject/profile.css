@@ -1,0 +1,298 @@
+body{
+    max-width: 100%;
+}
+
+
+
+.profile-container{
+    display: grid;
+    grid-template-areas: 
+    'a b b'
+    'c d d';
+    max-width: 100%;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem solid var(--dark-gray);
+    border-radius: 0.25rem;
+    grid-area: a;
+    padding: 1rem;
+}
+.profile-picture{
+    width: 300px;
+    height: 200px;
+    border-radius: 0.25rem;
+}
+
+.edit-delete{
+    border: 0.1rem solid var(--dark-gray);
+    border-radius: 0.25rem;
+    grid-area: b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edit-delete-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.edit-delete-div *{
+    width: 200px;
+}
+
+.btn-profile{
+    background-color: var(--main-color);
+    font-size: 1.25rem;
+    padding: 0.25rem;
+    border: 0.25rem solid var(--main-color);
+    border-radius: 0.25rem;
+    transition: none;
+    color: var(--secondary-color);
+    transition: none;
+    box-shadow: none;
+}
+
+.btn-profile:hover{
+    box-shadow:none;
+    color: white;
+    border: 0.25rem solid var(--other-main-color);
+    background-color: var(--other-main-color);
+}
+
+.btnCancel{
+    background-color: rgb(149, 0, 0);
+    border: none;
+    padding: 0.25rem;
+    width: 50px;
+    height: 25px;
+    color: white;
+}
+.btnCancel:hover{
+    border: none;
+
+    background-color: rgb(255, 29, 29);
+}
+
+.sub-btn{
+    font-size: 1rem;
+}
+
+
+.linkCancel{
+    background-color: rgb(149, 0, 0);
+    color: white;
+    padding: 0.25rem;
+}
+.linkCancel:hover{
+    background-color: rgb(255, 29, 29);
+
+}
+
+.profile-info{
+    grid-area: c;
+    border: 0.1rem solid var(--dark-gray);
+    border-radius: 0.25rem;
+    background-color: var(--light-gray)
+
+}
+.profile-info h3{
+    padding: 0.5rem;
+}
+.profile-info div{
+    border-top: 0.1rem solid var(--dark-gray);
+}
+
+.profile-info div *{
+    padding: 0.25rem;
+    font-size: 1.25rem;
+}
+
+.profile-info div h5{
+    font-weight: 100;
+
+}
+
+
+.calender{
+
+    min-width: 500px;
+    grid-area: d;
+    border: 0.1rem solid var(--dark-gray);
+    border-radius: 0.25rem;
+    background-color: var(--light-gray)
+}
+.calender h3{
+    padding: 0.5rem;
+}
+.calender .card-body{
+    border-top: 0.1rem solid var(--dark-gray) ;
+}
+
+table{
+    margin: auto;
+    width: 100%;
+}
+.table-profile{
+    margin: auto;
+    min-width: 450px;
+}
+
+.table-profile th td{
+    padding: 1.2rem 1.5rem ;
+}
+
+
+.table-profile tbody tr{
+    border-bottom: 0.1rem solid var(--dark-gray);
+    text-align: center;
+
+}
+
+.table-profile tbody tr td{
+    padding: 1rem;
+}
+.table-profile tbody tr:nth-last-of-type(even){
+    background-color: var(--dark-gray);
+}
+
+.calender-header *{
+    border:0.1rem solid  var(--dark-gray);
+}
+
+.table-row{
+    text-align: center;
+}
+
+/* MODAL STYLING */
+
+.modal , .modal-d,.modal-s, .modal-tu,.modal-te,.modal-td{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+  }
+  
+  .modal.active, .modal-d.active,.modal-s.active,.modal-tu.active,.modal-te.active,.modal-td.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+  
+  .modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    padding: 10px 15px;
+  }
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+
+form{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+form input{
+    width: 250px;
+}
+
+form button{
+    border: 0.1rem solid var(--main-color);
+    margin: 1rem;
+    font-size: 1.25rem;
+}
+
+.btn-therapist-update{
+    display: flex;
+    justify-content: center;
+}
+
+.therapist-form{
+    display: grid;
+    grid-template-areas: 
+    'a b'
+    'c c';
+}
+
+.therapist-card-text{
+    inline-size: 350px;
+    overflow-wrap: break-word;
+    /* word-wrap: break-word; */
+}
+
+
+@media (max-width:800px) {
+    .profile-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .calender{
+        width: 450px;
+        padding: 0.5rem;
+    }
+    .edit-delete{
+        padding: 2rem;
+    }
+
+    .edit-delete-div{
+        display: flex;
+        flex-direction: column;
+    }
+    .calender{
+        width: 90vw;
+    }
+}
+
